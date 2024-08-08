@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: #fff000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            /* background: #ff0000; */
+            border-radius: 100%;
+            animation: mantul 0.7s ease-in-out infinite alternate;
+        }
+        .ball img{
+            width: 100%;
+        }
+
+        @keyframes mantul {
+            from{
+                transform: translateY(0);
+            }to {
+                transform: translateY(200px) scaleX(1.4);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ball">
+            <img src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="bola">
+        </div>
+    </div>
+    
+</body>
+</html>

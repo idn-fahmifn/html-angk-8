@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Company Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .hero {
+            width: 100vw;
+            height: 100vh;
+            background-color: blanchedalmond;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+        }
+
+        .area-logo {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .nav-item ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        .nav-item ul li a{
+            color: #090909;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 100%;
+            height: 90%;
+        }
+        .text-title{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .button-area{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .button-area a{
+            margin: 20px;
+        }
+        .btn-download{
+            background-color: #0088cc;
+            padding: 20px;
+            text-decoration: none;
+            color: #ffff;
+        }
+        .btn-explore{
+            border: #0088cc solid 1px;
+            padding: 20px;
+            text-decoration: none;
+            color: #0088cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero" id="hero">
+        <div class="navbar">
+            <div class="area-logo">
+                <h1 class="title-logo">My Porto</h1>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#">Feature</a></li> 
+                    <li><a href="#">Pricing</a></li> 
+                    <li><a href="#">Reviews</a></li> 
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-title">
+                <h1>Hi, Im Abdulloh</h1>
+                <p>Web Developer - javaScript Enthusiast</p>
+            </div>
+            <div class="button-area">
+                <a class="btn-download" href="#">Download CV</a>
+                <a class="btn-explore" href="#">Explore</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
