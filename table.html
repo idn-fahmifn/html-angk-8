@@ -20,21 +20,32 @@
         }
         .table{
             width: 80%;
+            background-color: #ffff;
+            border-radius: 8px;
+            box-shadow: 20px 10px 50px #00000071;
         }
         .table, th, td{
-            border: 1px solid black;
-            padding: 10px;
+            padding: 16px;
             border-collapse: collapse;
+        }
+        tbody tr:nth-child(even){
+            background: #00b3ff30;
+        }
+        tbody tr:hover{
+            background-color: #0c0c0c2a;
         }
         .text-center{
             text-align: center;
         }
         .btn-edit{
-            background: #ff00ff;
-            padding: 5px 30px;
-            border-radius: 10px;
+            background: #0080ff;
+            padding: 10px 30px;
+            border-radius: 8px;
             color: #ffff;
             text-decoration: none;
+        }
+        .btn-edit:hover{
+            background-color: #0088cc;
         }
     </style>
 </head>
@@ -72,6 +83,13 @@
                 </tr>
                 <tr>
                     <td class="text-center">4</td>
+                    <td>MP123</td>
+                    <td>Diniyyah</td>
+                    <td>2 JP</td>
+                    <td class="text-center"><a href="#" class="btn-edit">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center">5</td>
                     <td>MP123</td>
                     <td>Diniyyah</td>
                     <td>2 JP</td>

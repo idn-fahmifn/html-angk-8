@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+        }
+        .langit{
+            width: 100%;
+            height: 50%;
+        }
+        .tanah{
+            width: 100%;
+            height: 50%;
+            background: url(https://www.pngkey.com/png/full/858-8587218_png-rumput-landscape.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+        .bola{
+            width: 100px;
+            height: 100px;
+            /* background-image: url(https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png); */
+            background-size: 100%;
+            animation: bounce 3s ;
+        }
+
+        /* area keyframe */
+        /* @keyframes bounce {
+            from{
+                transform: translateY(0); transform: scaleX(2);
+            }to{
+                transform: translateY(-300px);
+            }
+        } */
+
+        @keyframes bounce {
+            0%{
+                background-color: #08c;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background: #ffff00;
+                left: 200px;
+                top: 0;
+            }
+            50%{
+                background: red;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background: violet;
+                left: 0;
+                top: 200px;
+            }
+            100%{
+                background: #08c;
+                left: 0;
+                top: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="langit">
+        </div>
+        <div class="tanah">
+            <div class="bola"></div>
+        </div>
+    </div>
+</body>
+</html>
